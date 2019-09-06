@@ -5,6 +5,7 @@ app.use(
   require("cors")(),
   require("body-parser").json(),
   require("./auth/router"),
+  require("./user/router"),
   require("./image/router"),
 )
 
