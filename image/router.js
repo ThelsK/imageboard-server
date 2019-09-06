@@ -19,11 +19,11 @@ imageRouter.get("/image", (req, res, next) => {
 //     .catch(next)
 // })
 
-// eventRouter.post("/event", (req, res, next) => {
-//   Event.create(req.body)
-//     .then(event => res.send(event))
-//     .catch(next)
-// })
+imageRouter.post("/image", (req, res, next) => {
+  Image.create(req.body)
+    .then(image => res.send(image))
+    .catch(next)
+})
 
 // eventRouter.put("/event/:id", (req, res, next) => {
 //   Event.findByPk(req.params.id)
