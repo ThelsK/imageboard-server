@@ -4,6 +4,7 @@ const port = process.env.PORT || 4000
 app.use(
   require("cors")(),
   require("body-parser").json(),
+  require("./auth/router"),
   require("./image/router"),
 )
 

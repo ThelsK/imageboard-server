@@ -1,5 +1,5 @@
-const Image = require("./model")
 const imageRouter = new require("express").Router()
+const Image = require("./model")
 
 imageRouter.get("/image", (req, res, next) => {
   Image.findAll()
