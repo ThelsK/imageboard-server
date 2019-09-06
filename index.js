@@ -1,7 +1,7 @@
 const app = require("express")()
 const port = process.env.PORT || 4000
 
-const database = require("./database")
+const Image = require("./image/model")
 
 app.use(
   require("cors")(),
